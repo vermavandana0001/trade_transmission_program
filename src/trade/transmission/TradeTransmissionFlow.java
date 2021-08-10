@@ -61,10 +61,10 @@ public class TradeTransmissionFlow {
     // Update expired flag if the trade crosses the maturity date
     public void updateTradeDetailExpiredFlag() {
         Date currentDate = new Date();
-        tradeDetailsMap.keySet().stream().filter(key -> currentDate.compareTo(tradeDetailsMap.get(key).getMaturityDate()) > 0).forEach(key -> {
-            TradeDetail t = tradeDetailsMap.get(key);
+        tradeDetailsMap.keySet().stream().filter(record -> currentDate.compareTo(tradeDetailsMap.get(record).getMaturityDate()) > 0).forEach(record -> {
+            TradeDetail t = tradeDetailsMap.get(record);
             t.setExpired('Y');
-            tradeDetailsMap.replace(key, t);
+            tradeDetailsMap.replace(record, t);
         });
 
     }

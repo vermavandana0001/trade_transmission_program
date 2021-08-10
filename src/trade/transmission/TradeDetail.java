@@ -33,24 +33,10 @@ public class TradeDetail {
     }
 
     /**
-     * @param tradeId the tradeId to set
-     */
-    public void setTradeId(String tradeId) {
-        this.tradeId = tradeId;
-    }
-
-    /**
      * @return the version
      */
     public int getVersion() {
         return version;
-    }
-
-    /**
-     * @param version the version to set
-     */
-    public void setVersion(int version) {
-        this.version = version;
     }
 
     /**
@@ -61,27 +47,6 @@ public class TradeDetail {
     }
 
     /**
-     * @param counterPartyId the counterPartyId to set
-     */
-    public void setCounterPartyId(String counterPartyId) {
-        this.counterPartyId = counterPartyId;
-    }
-
-    /**
-     * @return the bookId
-     */
-    public String getBookId() {
-        return bookId;
-    }
-
-    /**
-     * @param bookId the bookId to set
-     */
-    public void setBookId(String bookId) {
-        this.bookId = bookId;
-    }
-
-    /**
      * @return the maturityDate
      */
     public Date getMaturityDate() {
@@ -89,7 +54,7 @@ public class TradeDetail {
     }
 
     /**
-     * @param maturityDate the maturityDate to set
+     * @param maturityDate the maturityDate
      */
     public void setMaturityDate(Date maturityDate) {
         this.maturityDate = maturityDate;
@@ -100,13 +65,6 @@ public class TradeDetail {
      */
     public Date getCreatedDate() {
         return createdDate;
-    }
-
-    /**
-     * @param createdDate the createdDate to set
-     */
-    public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
     }
 
     /**
